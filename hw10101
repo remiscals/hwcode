@@ -1,0 +1,39 @@
+def playOnce():
+    import random
+    randomPlay1 = random.randrange(1,4)
+    randomPlay2 = random.randrange(1,4)
+   
+if(randomPlay1 == 1):
+    computerPlay1 = "Paper"
+if(randomPlay1 == 2):
+    computerPlay1 = "Scissor"
+if(randomPlay1 == 3):
+    computerPlay1 = "Rock"
+
+print("Computer 1 Play: ", computerPlay1)
+if(randomPlay2 == 1):
+    computerPlay2 = "Paper"
+if(randomPlay2 == 2):
+    computerPlay2 = "Scissors"
+if(randomPlay2 == 3):
+    computerPlay2 = "Rock"
+print("Computer 2 Play: ", computerPlay2)
+
+returnList = [randomPlay1, randomPlay2];
+print (returnList)
+
+userDecision = input("Who won? 1 or 2; Enter 3 for tie. 4 to stop.")
+if(int(userDecision) == 1):
+    print("Computer 1 wins")
+    
+if(int(userDecision) == 2):
+    print("Computer 2 wins")
+    
+if(int(userDecision) == 3):
+    print("Tie!")
+    
+if(int(userDecision) == 4):
+    quit()
+returnList.append(userDecision)
+
+print(returnList)
